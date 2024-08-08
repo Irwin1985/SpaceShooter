@@ -1,0 +1,131 @@
+DESIGNERSTART = Form,Form,BasicForm
+GUID=CA1D2806-1D41-46A5-B499-471AE34108B1
+FormBorderStyle=FixedDialog
+Icon=Imagenes.resources::%AppPath%\Resources\icon.ico
+Name=BasicForm
+SizeGripStyle=Hide
+StartPosition=CenterParent
+Text=Space Shooter
+Location=100 , 100
+ClientSize=600 , 500
+MinimumSize=600 , 500
+MaximumSize=600 , 500
+BackColor=Color.Navy
+KeyDown=BasicForm_KeyDown
+KeyUp=BasicForm_KeyUp
+Load=BasicForm_Load
+ControlPrefix=o
+CallPreResumeLayout=No
+CallSuperInitialize=No
+UseGrid=Yes
+GridX=8
+GridY=8
+SUBCONTROLSSTART
+  
+  CONTROL=System.Windows.Forms.Label
+  GUID=ECE4712B-472A-4E29-ABA5-DFBE50D57CE1
+  AutoSize=False
+  BorderStyle=None
+  Name=LblPause
+  Text=PAUSE
+  Location=0 , 216
+  Size=600 , 48
+  ForeColor=255,255,255
+  BackColor=Color.Transparent
+  Font=FFF Forward, 21.75
+  TabIndex=2
+  TextAlign=TopCenter
+  Visible=False
+  
+  CONTROL=System.Windows.Forms.Label
+  GUID=C181DBF8-71BC-4552-BA38-10ECE0C062DE
+  AutoSize=True
+  BorderStyle=None
+  Name=LblScore
+  Text=Score: 0
+  Location=4 , 2
+  Size=92 , 33
+  ForeColor=255,255,255
+  BackColor=Color.Transparent
+  Font=FFF Forward, 12.0
+  TabIndex=1
+  
+  CONTROL=System.Windows.Forms.PictureBox
+  GUID=DE013CB3-793F-4ECE-BB70-29053B3F5554
+  Image=Imagenes.resources::%AppPath%\Resources\player.png
+  Name=Player
+  SizeMode=Zoom
+  Location=275 , 416
+  Size=50 , 50
+  BackColor=Color.Transparent
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=75F2500F-E6D0-4D92-8471-FDC51C0EA0A9
+  Enabled=True
+  Interval=10
+  Name=MoveBgTimer
+  Tick=MoveBgTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=6ACA16AE-BC07-4014-9C8F-B1B07BF68264
+  Interval=5
+  Name=LeftMoveTimer
+  Tick=LeftMoveTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=D6C4A493-82AE-4CFD-8980-BFF0F7374D85
+  Interval=5
+  Name=RightMoveTimer
+  Tick=RightMoveTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=DDE6F513-A85F-4216-91B0-4F26805EDB9B
+  Interval=5
+  Name=DownMoveTimer
+  Tick=DownMoveTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=2D22E423-B7C8-4E71-8645-A0637C5C68E8
+  Interval=5
+  Name=UpMoveTimer
+  Tick=UpMoveTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=D60EB46B-A513-4798-971B-D0760DB29AE7
+  Enabled=True
+  Interval=20
+  Name=MoveMunitionsTimer
+  Tick=MoveMunitionsTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=0A9ED644-0212-436F-9D73-B4568CA1C4D7
+  Enabled=True
+  Interval=100
+  Name=MoveEnemiesTimer
+  Tick=MoveEnemiesTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=F67B40ED-B816-41F1-8832-910E90EF464B
+  Enabled=True
+  Interval=20
+  Name=EnemyMunitionTimer
+  Tick=EnemyMunitionTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=FBBE9F5E-6F8C-4E75-8D61-200ADFA9BEF9
+  Enabled=True
+  Interval=1000
+  Name=PauseTimer
+  Tick=PauseTimer_Tick
+  
+  CONTROL=System.Windows.Forms.Timer
+  GUID=DEDEE022-F435-4144-85C4-529C4CB95860
+  Enabled=False
+  Interval=1000
+  Name=StartGameTimer
+  Tick=StartGameTimer_Tick
+
+SUBCONTROLSEND
+DESIGNEREND = BasicForm
+
+
